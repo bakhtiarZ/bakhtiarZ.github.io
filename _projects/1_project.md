@@ -1,80 +1,47 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: "Autonomous Mars Rover"
+description: a project to develop a proof of concept mars rover, purposed to autonomously survey complex terrain and relay accurate data. over HTTP.
+img: assets/img/marsrover.jpg
 importance: 1
 category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+This project was part of my 2nd year at Imperial College London. I worked in a group of 6 students and we were tasked to develop a proof of concept rover with 6 seperate subsystems involved. 
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+These subsystems included:
+ - Control: This subsystem was responsible for connecting all the peripherals together and maintining proper overall function of the rover. All routing decisions were made within this subsystem and data transfer over HTTP was also implemented. This subsystem used a dual-core ESP32 with WiFi capabilities.
+ - Vision: In order to avoid obstacles and survey the simulated Mars environment, the rover used FPGA based computer vision. Due to the low cost of components and aim of power efficiency, machine learning algorithms were not implemented and instead image processing using digital electronics were implemented.
+ - Command: Serving as a simulated 'mission control' for the mars rover, a webserver application was developed. This would communicate with the rover and receive data about the obstacles and terrain it surveyed. This included coordinate locations of hazardous areas and possible extra-terrestrial habitats. In addition, it also had functionality for manual control of the rover and monitoring of its battery.
+ - Drive: This subsystem encompassed how the rover moved around and its routing algorithm. The functionality needed was accurate routing via a coordinate or movement instructions.
+ - Power and Energy: This section is responsible for supplying the rover, namely the controller, FPGA, and motors with energy. It is also the section responsible for developing a charging station which utilises solar energy. 
+ - Radar: The radar subsystem was used to detect any possible metal machinery which would be indicative of advanced life-forms. This was implemented using a doppler radar.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/rd.PNG" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    A block diagram of the rover's subsystems.
 </div>
-<div class="row">
+
+
+<div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include video.html path="assets/video/roverdemo.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <p>This is a short video demo of the Mars Rover in action, the coloured balls represent 'interesting' objects and the rover is moving autonomously to survey the area, reporting accurate data back to the webserver application. It is also possible to control the rover manually via the webserver which is shown in the video.
+        During this project, I primarily worked on the control, vision, and drive subsystems. These incorporated a lot of knowledge of hardware design and low level software engineering.</p> 
+        <b>Below are the skills I developed during this project:</b>
+        <ul>
+        <li> C++ </li>
+        <li> Python </li>
+        <li> SystemVerilog </li>
+        <li> Image processing </li>
+        <li> Embedded systems (ESP32) </li>
+        </ul>
     </div>
 </div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
