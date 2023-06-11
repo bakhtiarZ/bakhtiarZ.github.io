@@ -34,7 +34,7 @@ These subsystems included:
     </div>
     <div class="col-sm mt-3 mt-md-0">
         <p>This is a short video demo of the Mars Rover in action, the coloured balls represent 'interesting' objects and the rover is moving autonomously to survey the area, reporting accurate data back to the webserver application. It is also possible to control the rover manually via the webserver which is shown in the video.
-        During this project, I primarily worked on the control, vision, and drive subsystems. These incorporated a lot of knowledge of hardware design and low level software engineering.</p> 
+        During this project, I primarily worked on the control, vision, and drive subsystems. These incorporated a lot of knowledge of hardware design and low level software engineering. One feature the demo does not show is the obstacle avoidance, this was done using the FPGA camera and a routing algorithm.</p> 
         <b>Below are the skills I developed during this project:</b>
         <ul>
         <li> C++ </li>

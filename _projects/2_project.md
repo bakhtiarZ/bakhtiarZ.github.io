@@ -1,80 +1,26 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image
-img: assets/img/3.jpg
+title: FPGA computation accelerator
+description: A hardware based accelerator for functions related to DSP applications. This project was part of my 3rd year at Imperial College London.
+img: assets/img/DE1.jpg
 importance: 2
 category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<p> This project was part of my 3rd year at Imperial College London. I was tasked to develop a hardware based accelerator for functions related to DSP applications. This project was research focused, prioritising thorough and reasoned investigations of possible performance increases. Another goal of the project was efficiency. The accelerator design was aimed at finding the optimal point where the design had adequate performance and efficiency. Throughout the project, many designs were considered that investigated different points on the Parento front. </p>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+<p> The project was split into 3 main parts: </p>
+<ul> The first part covered developing a base implementation using a more simple function. Later, processor parameters such as cache sizing, arithmetic unit count, and memory bandwidth were varied to investigate the effects on performance and efficiency. Extra areas of investigation included usage of differnt memories within the SOC, optimsation of the branch predictor, and compiler optimsation tuning</ul>
+<ul> The second part regarded mathematical approximations of the function to be computed, these included the taylor & maclaurin series, chebyshev approximations, and lookup implementations of the cosine function. These were initially implemented in software. Extensions included investigations into the precision / performance tradeoff of the approximations and also a software implementation of floating point division. </ul>
+<ul> The final part of the project was to implement the entire function and calculation in hardware. This involved heavy use of custom instructions and the programming of a CORDIC block. Investigations into pipelined, folded, and combinatorial implementations were conducted. In addition, large amounts of testbenching and verification was done to ensure an Mean-Squared-Error less than 10^-10. Extensions to this final part included parallelisation in hardware and pipelining of multiple instruction calls.</ul>
+<p> Throughout the project, the processor was repeatedly tuned to account for the changes in the accelerator. For instance, once the custom instruction was implemented, the instruction cache could be drastically reduced. This tuning helped keep the resource usage down to a minimum. In the final rendition of the design, there was a 99.95% reduction in latency with only 4.772% resource usage.</p>
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/fpgablockdiagram.PNG" title="Block Diagram" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    A block diagram of the final architecture for the custom instruction. This sat inside a processor with tuned parameters..
 </div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
