@@ -2,7 +2,7 @@
 layout: page
 title: HTTP Server library
 description: a project undertaken during my 6 month placement at JP Morgan.
-img: assets/img/7.jpg
+img: assets/img/httpthumb.jpg
 importance: 3
 category: work
 ---

@@ -1,80 +1,44 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
+title: ProPutter
+description: An embedded system for golfers to improve their putting. This project was part of my 3rd year at Imperial College London.
+img: /assets/img/golf.PNG
 importance: 3
 category: fun
 ---
+<p>The project involved the development of ProPutter, an innovative embedded system IoT product designed to enhance golf performance. ProPutter combined both hardware and software components to analyze golf swings, provide insightful analytics, and offer criticisms aimed at improving the player's technique. Additionally, the product included social media features and a web application to create a comprehensive golf improvement ecosystem.</p>
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<h6><b>Hardware Development:</b></h6>
+<p>The hardware component of ProPutter was designed to be attached to a user's golf club. It consisted of sensors, accelerometers, and gyroscopes strategically placed to capture data during the swing. These sensors would detect and measure key swing parameters such as swing speed, clubface angle, impact position, and swing path.</p>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+<p>The collected data from the hardware sensors was processed and transmitted to the software component of ProPutter for further analysis and interpretation.</p>
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+<h6><b>Software Development:</b></h6>
+<p>The software component of ProPutter encompassed a range of functionalities aimed at analyzing and improving the user's golf swing. The software included the following key aspects:</p>
+
+<h6><b>Data Analysis and Insights:</b></h6>
+<p>The swing data captured by the hardware was analyzed using sophisticated algorithms and machine learning techniques. The software would provide detailed analytics, including graphical representations of the swing path, clubface angle at impact, and tempo analysis. These insights allowed users to identify areas for improvement in their technique.</p>
+
+<h6><b>Personalized Suggestions and Criticisms:</b></h6>
+<p>ProPutter utilized the analyzed data to provide personalized suggestions and criticisms to the user. Based on the individual's swing data, the software would identify specific areas of improvement, offer corrective advice, and suggest drills or exercises to enhance their performance.</p>
+
+<h6><b>Social Media Integration:</b></h6>
+<p>ProPutter incorporated social media features, enabling users to share their swing data, achievements, and improvements with others in their golfing community. This facilitated healthy competition, knowledge sharing, and motivation among users.</p>
+
+<h6><b>Web Application:</b></h6>
+<p>A web application was developed to complement the ProPutter hardware and software. The web app allowed users to access their swing data, analytics, and personalized suggestions from any device with internet access. It also served as a platform for user interactions, providing forums, discussion boards, and further resources to support their golf improvement journey.</p>
+
+<p>The project involved a multidisciplinary team, including hardware engineers, software developers, data scientists, user experience designers, and web developers. Close collaboration among team members was vital to ensure seamless integration between the hardware and software components and to deliver a user-friendly and feature-rich product.</p>
+
+<p>Throughout the project, extensive testing and iteration were conducted to refine the accuracy, reliability, and user experience of ProPutter. User feedback and insights played a crucial role in identifying areas for enhancement and implementing software updates.</p>
+
+<p>Ultimately, the development of ProPutter aimed to provide golf enthusiasts with a comprehensive tool to analyze their swings, receive personalized feedback, and connect with a community of like-minded individuals passionate about improving their golf skills.</p>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/proputter.jpg" title="Architecture diagram" class="img" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    A photo of the prototype golf club with the ProPutter module attached.
 </div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
