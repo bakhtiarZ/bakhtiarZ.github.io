@@ -45,3 +45,12 @@ These subsystems included:
         </ul>
     </div>
 </div>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/objectdetection.jpg" title="Object Detection" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <p>This is an image of the object detection algorithm, the striped building simulated an obstacle as these are often jagged with harsh edges. The lines shown on the image represent edges being detected using image processing methods. This version of the processed image would count as data and feed into the surveying and routing algorithms.</p> 
+    </div>
+</div>
