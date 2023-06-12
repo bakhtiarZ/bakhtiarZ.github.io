@@ -4,7 +4,7 @@ title: ProPutter
 description: An embedded system for golfers to improve their putting. This project was part of my 3rd year at Imperial College London.
 img: /assets/img/golf.PNG
 importance: 3
-category: fun
+category: work
 ---
 <p>The project involved the development of ProPutter, an innovative embedded system IoT product designed to enhance golf performance. ProPutter combined both hardware and software components to analyze golf swings, provide insightful analytics, and offer criticisms aimed at improving the player's technique. Additionally, the product included social media features and a web application to create a comprehensive golf improvement ecosystem.</p>
 
