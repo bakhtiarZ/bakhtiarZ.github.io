@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://bakhtiarZ.github.io/sitemap.xml
+Sitemap: https://bakhtiarz.github.io/sitemap.xml
