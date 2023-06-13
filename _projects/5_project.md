@@ -36,11 +36,14 @@ category: work
 <ul> <li>Integration of additional exercise types to target a broader range of physical therapy needs.</li>
 <li>Implementation of adaptive difficulty levels to accommodate various skill levels and abilities.</li>
 <li>Collaborative gameplay modes to encourage social interaction</li>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/proputter.jpg" title="Architecture diagram" class="img" %}
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/s2.jpg" title="Title screen" class="img" %}
+    </div>
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/s1.jpg" title="Game screen with example instruction" class="img" %}
     </div>
 </div>
 <div class="caption">
-    A photo of the prototype golf club with the ProPutter module attached.
+    Some photos of the game in action. These would have audio instructions as well as background music.
 </div>
