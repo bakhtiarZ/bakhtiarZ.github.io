@@ -2,7 +2,7 @@
 layout: page
 title: SimonSays
 description: A multiplayer battle royale style game designed to help physiotherapy become more entertaining for children.
-img: /assets/img/golf.PNG
+img: /assets/img/s2.jpg
 importance: 3
 category: work
 ---
