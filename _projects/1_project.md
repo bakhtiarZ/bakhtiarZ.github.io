@@ -2,7 +2,7 @@
 layout: page
 title: "Latent Diffusion Model Accelerator"
 description: a project to develop a data-flow design aimed to be instantiated over one or multiple FPGAs with the goal of reducing diffusion model inference latency by speeding up per step computations. (Ongoing)
-img: assets/img/marsrover.jpg
+img: assets/img/diffusionmodeldiagram.png
 importance: 1
 category: work
 ---
