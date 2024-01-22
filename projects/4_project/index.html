@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ProPutter | Bakhtiar  Zadeh</title>
+    <title>HTTP Server library | Bakhtiar  Zadeh</title>
     <meta name="author" content="Bakhtiar  Zadeh">
-    <meta name="description" content="An embedded system for golfers to improve their putting. This project was part of my 3rd year at Imperial College London.">
+    <meta name="description" content="a project undertaken during my 6 month placement at JP Morgan.">
     <meta name="keywords" content="academic-website, portfolio-website">
 
 
@@ -116,52 +116,47 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">ProPutter</h1>
-            <p class="post-description">An embedded system for golfers to improve their putting. This project was part of my 3rd year at Imperial College London.</p>
+            <h1 class="post-title">HTTP Server library</h1>
+            <p class="post-description">a project undertaken during my 6 month placement at JP Morgan.</p>
           </header>
 
           <article>
-            <p>The project involved the development of ProPutter, an innovative embedded system IoT product designed to enhance golf performance. ProPutter combined both hardware and software components to analyze golf swings, provide insightful analytics, and offer criticisms aimed at improving the player's technique. Additionally, the product included social media features and a web application to create a comprehensive golf improvement ecosystem.</p>
+            <p> As part of a challenging project, I undertook the development of a low latency HTTP server library using C++. The goal of the project was to create a performant and scalable library that could handle high volumes of incoming HTTP requests with minimal latency. </p>
 
-<h6><b>Hardware Development:</b></h6>
-<p>The hardware component of ProPutter was designed to be attached to a user's golf club. It consisted of sensors, accelerometers, and gyroscopes strategically placed to capture data during the swing. These sensors would detect and measure key swing parameters such as swing speed, clubface angle, impact position, and swing path.</p>
+<p>To achieve this, I started by conducting extensive research on existing HTTP server libraries and protocols to understand the best practices and performance optimization techniques. This allowed me to design a robust architecture for the library that would prioritize low latency and high throughput.</p>
 
-<p>The collected data from the hardware sensors was processed and transmitted to the software component of ProPutter for further analysis and interpretation.</p>
+<p>The development process involved several key components:</p>
 
-<h6><b>Software Development:</b></h6>
-<p>The software component of ProPutter encompassed a range of functionalities aimed at analyzing and improving the user's golf swing. The software included the following key aspects:</p>
+<p><b>Event-driven Architecture:</b> I implemented an event-driven architecture using C++ to handle incoming requests asynchronously. This approach ensured that the server could efficiently handle multiple concurrent connections without blocking or incurring unnecessary overhead.</p>
 
-<h6><b>Data Analysis and Insights:</b></h6>
-<p>The swing data captured by the hardware was analyzed using sophisticated algorithms and machine learning techniques. The software would provide detailed analytics, including graphical representations of the swing path, clubface angle at impact, and tempo analysis. These insights allowed users to identify areas for improvement in their technique.</p>
+<p><b>Socket Programming:</b> I utilized C++ socket programming techniques to establish and manage connections with clients. This included handling socket creation, binding, and listening for incoming connections.</p>
 
-<h6><b>Personalized Suggestions and Criticisms:</b></h6>
-<p>ProPutter utilized the analyzed data to provide personalized suggestions and criticisms to the user. Based on the individual's swing data, the software would identify specific areas of improvement, offer corrective advice, and suggest drills or exercises to enhance their performance.</p>
+<p><b>HTTP Parsing:</b> I implemented a lightweight and efficient HTTP parsing mechanism to extract relevant information from incoming requests. This involved processing request headers, URL parameters, and request bodies.</p>
 
-<h6><b>Social Media Integration:</b></h6>
-<p>ProPutter incorporated social media features, enabling users to share their swing data, achievements, and improvements with others in their golfing community. This facilitated healthy competition, knowledge sharing, and motivation among users.</p>
+<p><b>Multithreading:</b> To further enhance performance, I incorporated multithreading techniques to handle concurrent requests efficiently. This allowed the server to process multiple requests in parallel, leveraging the available CPU cores effectively.</p>
 
-<h6><b>Web Application:</b></h6>
-<p>A web application was developed to complement the ProPutter hardware and software. The web app allowed users to access their swing data, analytics, and personalized suggestions from any device with internet access. It also served as a platform for user interactions, providing forums, discussion boards, and further resources to support their golf improvement journey.</p>
+<p><b>Response Generation:</b> I designed a response generation module to construct and send appropriate HTTP responses to clients. This involved handling different HTTP status codes, content types, and response headers.</p>
 
-<p>The project involved a multidisciplinary team, including hardware engineers, software developers, data scientists, user experience designers, and web developers. Close collaboration among team members was vital to ensure seamless integration between the hardware and software components and to deliver a user-friendly and feature-rich product.</p>
+<p><b>Performance Optimization:</b> Throughout the development process, I focused on optimizing the library for low latency and high throughput. This included techniques such as connection pooling, request pipelining, and data compression to minimize latency and improve overall performance.</p>
 
-<p>Throughout the project, extensive testing and iteration were conducted to refine the accuracy, reliability, and user experience of ProPutter. User feedback and insights played a crucial role in identifying areas for enhancement and implementing software updates.</p>
+<p><b>Error Handling and Logging:</b> I implemented robust error handling mechanisms to gracefully handle exceptions and prevent crashes. Additionally, I incorporated logging functionality to record important events and aid in troubleshooting.</p>
 
-<p>Ultimately, the development of ProPutter aimed to provide golf enthusiasts with a comprehensive tool to analyze their swings, receive personalized feedback, and connect with a community of like-minded individuals passionate about improving their golf skills.</p>
+<p>During the project, I conducted extensive testing to ensure the library's stability and performance under various scenarios, including high request loads and stress testing. I also collaborated with other developers and received feedback to continuously improve the library's efficiency and usability.</p>
 
+<p>In conclusion, the development of the low latency HTTP server library using C++ was a complex and demanding project. Through careful architectural design, efficient coding practices, and performance optimization techniques, I was able to create a high-performance HTTP server library capable of handling large volumes of requests with minimal latency. </p>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <figure>
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/proputter-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/proputter-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/proputter-1400.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/httpservarchitecture.drawio-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/httpservarchitecture.drawio-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/httpservarchitecture.drawio-1400.webp"></source>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/proputter.jpg" class="img" width="auto" height="auto" title="Architecture diagram" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/httpservarchitecture.drawio.png" class="img" width="auto" height="auto" title="Architecture diagram" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -170,7 +165,31 @@
     </div>
 </div>
 <div class="caption">
-    A photo of the prototype golf club with the ProPutter module attached.
+    A top level diagram of the software architecture.
+</div>
+<p><br><br></p>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/httpserv-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/httpserv-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/httpserv-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/httpserv.png" class="img" width="auto" height="auto" title="Work Breakdown Structure diagram" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    A diagram of the project layout, this provides an overview of the relevant deliverables.
 </div>
 
           </article>
@@ -183,7 +202,7 @@
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        © Copyright 2023 Bakhtiar  Zadeh. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
+        © Copyright 2024 Bakhtiar  Zadeh. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
 
       </div>
     </footer>
