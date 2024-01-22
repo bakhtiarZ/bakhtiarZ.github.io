@@ -7,9 +7,9 @@ importance: 1
 category: work
 ---
 
-This project is my final year project for my MEng Electronic and Information Engineering degree at Imperial College London. It aims to reduce the inference latency of diffusion models by targetting the per timestep latency. This will be done by instantiating an optimial and parameterised data-flow design that implements the denoising neural network (U-Net). 
+This project is my final year project for my MEng Electronic and Information Engineering degree at Imperial College London. It aims to reduce the inference latency of diffusion models by targetting the per timestep latency. This will be done by instantiating an optimial and parameterised data-flow design that implements the denoising neural network (U-Net). This work is done in assosciation with the DeepWok Lab (https://deepwok.github.io/).
 
-This project is my largest to date and is not completed yet. Here is an excerpt from my interim report that introduces the problem scenario. In the following weeks, as the project is completed, this page will be filled with relevant implementation details and results.
+This project is my largest to date and is not completed yet. Here is an excerpt from my interim report that introduces the problem scenario. In the following weeks, as the project is completed, this page will be filled with relevant implementation details and results. For those who are interested, here is a reading list I curated which describes the relevant topics: https://github.com/DeepWok/paper_reading/blob/master/diffusion_models/diffusionModels.md
 
 *My project encompasses the development of a parameterised hardware design for the time dependant neural
 network used within diffusion models and other score based generative models. The goal of this design is
