@@ -125,21 +125,11 @@
 
 <p>The abstract for this project is as follows:</p>
 
-<p>Diffusion models achieve state of the art image synthesis and boast powerful generative capabilities.
-In particular, Latent Diffusion Models [1] are capable of generating high-resolution images that
-beat alternative methods [2]. However, diffusion models suffer from a long and iterative generation
-process which consumes a great deal of computational resources. There has been a strong effort
-to reduce this computational need by reducing the number of iterations (or sampling steps) the
-diffusion model must undergo, but there has been limited work in reducing per-step latency. This
-project encompasses the development of the custom hardware and software used to accelerate
-Latent Diffusion Model inference within a tolerable loss in generative quality. A significant goal of
-the work is to develop open-source hardware and software in order to encourage global collaboration
-to aid the goal of efficient computation. The development of this open-source accelerator will be
-the first of its kind and could lead to more research being conducted. This aspect is inspired by
-projects such as lowRisc [3] and the MASE [4] repository which are open-source projects with a
-focus on quality, efficiency, and robustness of the components developed</p>
+<p>Diffusion models achieve state of the art image synthesis and boast powerful generative capabilities. In particular, Latent Diffusion Models are capable of generating high-resolution images that beat alternative methods. However, diffusion models suffer from a long and iterative generation process which consumes a great deal of computational resources. There has been a strong effort to reduce this computational need by reducing the number of iterations (or sampling steps) the diffusion model must undergo, but there has been limited work in reducing per-step latency. This project encompasses the development of the custom hardware and software used to accelerate Latent Diffusion Model inference within a tolerable loss in generative quality. A significant goal of the work is to develop open-source hardware and software in order to encourage global collaboration to aid the goal of efficient computation. The  development of this open-source accelerator will be the first of its kind and could lead to more research being conducted. This aspect is inspired by projects such as lowRisc and the MASE repository which are open-source projects with a focus on quality, efficiency, and robustness of the components developed.</p>
 
 <p>Due to the large complexity of the project, it cannot be fully described in this portfolio. But a diagram for the top level design is below. Overall, many components were developed in SystemVerilog and verified using CocoTB with Verilator. The highly optimised data-streaming design using a quantised latent diffusion model achieved a 4x performance improvement against competing GPUs with a tolerable loss of generative quality.</p>
+
+<p>The design was implemented on an Xilinx Alveo U250 FPGA with a 222MHz clock frequency.</p>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -147,13 +137,13 @@ focus on quality, efficiency, and robustness of the components developed</p>
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/unet-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/unet-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/unet-1400.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/unetwb-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/unetwb-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/unetwb-1400.webp"></source>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/unet.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="U-Net to be implemented" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/unetwb.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="U-Net block diagram, this was instantiated on an Alveo U250 FPGA" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
