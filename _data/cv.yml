@@ -11,19 +11,19 @@
 - title: Education
   type: time_table
   contents:
-    - title: MEng (Integrated Masters)
+    - title: MEng (Integrated Masters of Engineering)
       institution: Imperial College London, London, United Kingdom
       year: 2024
       description:
         - This degree covers a variety of content similar to other qualifications sometimes under the name 'Computer Engineering'. 
         - title: "Fields of Expertise:"
           contents:
-            - Digital Electronics
-            - Advanced Computer Architecture
-            - Machine Learning and Computer Vision
-            - Digital Signal Processing
+            - Digital Electronics (FPGA)
+            - Computer Architecture
+            - Machine Learning
+            - Generative Artificial Intelligence (Diffusion Models)
             - Software Engineering and Embedded Systems
-        - "Grades: Year 1: 1st Class, Year 2: 1st Class, Year 3: Pending, Year 4: TBD " 
+        - "Grades: 1st Class Award" 
     - title: A-Levels (Pre-University)
       institution: Woodhouse College, London, United Kingdom
       year: 2020
@@ -39,10 +39,10 @@
   contents:
     - title: Software Engineer (6 month placement)
       institution: JP Morgan Chase, Central Investment Bank, London
-      year: 2023 April
+      year: 2023 April - 2023 October
       description:
-        - During my 6 month placement, I have been working as a software engineer as a part of the Rates/Credit E-trading group. My smaller team focuses on the low-latency order execution engine. 
-        - title: "Technologies and skills used:"
+      - I worked as a software developer within JP Morgan’s market making arm for fixed income products. This role required me to implement features, often involving networking, that met strict latency and code quality requirements. My flagship project was a single-threaded low latency HTTP Server. I worked using C++ 14.         
+      - title: "Technologies and skills used:"
           contents:
             - C++ 14 (Object Oriented)
             - Linux
