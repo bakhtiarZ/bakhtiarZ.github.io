@@ -31,7 +31,7 @@ category: work
 <p>In conclusion, the development of the low latency HTTP server library using C++ was a complex and demanding project. Through careful architectural design, efficient coding practices, and performance optimization techniques, I was able to create a high-performance HTTP server library capable of handling large volumes of requests with minimal latency. </p>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/httpservarchitecture.drawio.png" title="Architecture diagram" class="img" %}
+        {% include figure.html path="assets/img/httpservarchitecture.drawio(1).png" title="Architecture diagram" class="img" %}
     </div>
 </div>
 <div class="caption">
@@ -40,7 +40,7 @@ category: work
 <br><br>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/httpserv.png" title="Work Breakdown Structure diagram" class="img" %}
+        {% include figure.html path="assets/img/httpserv(1).png" title="Work Breakdown Structure diagram" class="img" %}
     </div>
 </div>
 <div class="caption">
