@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>projects | Bakhtiar  Zadeh</title>
     <meta name="author" content="Bakhtiar  Zadeh">
-    <meta name="description" content="A growing collection of my projects.">
+    <meta name="description" content="Research projects and selected technical side projects.">
     <meta name="keywords" content="academic-website, portfolio-website">
 
 
@@ -117,16 +117,58 @@
 
           <header class="post-header">
             <h1 class="post-title">projects</h1>
-            <p class="post-description">A growing collection of my projects.</p>
+            <p class="post-description">Research projects and selected technical side projects.</p>
           </header>
 
           <article>
             <!-- pages/projects.md -->
 <div class="projects">
   <!-- Display categorized projects -->
-  <h2 class="category">work</h2>
+  <h2 class="category">PhD Projects</h2>
   <!-- Generate cards for each project -->
   <div class="grid">
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+  <a href="/projects/8_heterogeneous_resources/">
+      <div class="card hoverable">
+        <div class="card-body">
+          <h2 class="card-title text-lowercase">Automatic Allocation of Heterogeneous Resources</h2>
+          <p class="card-text">Ongoing research on assigning heterogeneous hardware resources from model definitions to improve neural network inference under tight resource limits.</p>
+          <div class="row ml-1 mr-1 p-0">
+          </div>
+        </div>
+      </div>
+    </a>
+</div>
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+  <a href="/projects/7_arrc/">
+      <div class="card hoverable">
+        <div class="card-body">
+          <h2 class="card-title text-lowercase">ARRC</h2>
+          <p class="card-text">A research compiler that lowers quantized Keras models into a streaming IR and emits FPGA-oriented SystemVerilog.</p>
+          <div class="row ml-1 mr-1 p-0">
+          </div>
+        </div>
+      </div>
+    </a>
+</div>
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+  <a href="/projects/4_hgqlut/">
+      <div class="card hoverable">
+        <div class="card-body">
+          <h2 class="card-title text-lowercase">HGQ-LUT</h2>
+          <p class="card-text">A collaborative FPGA inference project combining LUT-aware training, heterogeneous quantization, and end-to-end hardware generation for hybrid neural networks.</p>
+          <div class="row ml-1 mr-1 p-0">
+          </div>
+        </div>
+      </div>
+    </a>
+</div>
 <!-- _includes/projects.html -->
 <div class="grid-sizer"></div>
 <div class="grid-item">
@@ -150,13 +192,17 @@
 
         <div class="card-body">
           <h2 class="card-title text-lowercase">Latent Diffusion Model Accelerator</h2>
-          <p class="card-text">a project to develop a data-flow design aimed to be instantiated over one or multiple FPGAs with the goal of reducing diffusion model inference latency by speeding up per step computations. (Ongoing)</p>
+          <p class="card-text">A parameterisable FPGA dataflow accelerator for latent diffusion inference with layer-wise post-training quantization.</p>
           <div class="row ml-1 mr-1 p-0">
           </div>
         </div>
       </div>
     </a>
 </div>
+  </div>
+  <h2 class="category">Pet Projects</h2>
+  <!-- Generate cards for each project -->
+  <div class="grid">
 <!-- _includes/projects.html -->
 <div class="grid-sizer"></div>
 <div class="grid-item">
@@ -180,7 +226,7 @@
 
         <div class="card-body">
           <h2 class="card-title text-lowercase">Autonomous Mars Rover</h2>
-          <p class="card-text">a project to develop a proof of concept mars rover, purposed to autonomously survey complex terrain and relay accurate data. over HTTP.</p>
+          <p class="card-text">A multi-subsystem rover platform combining embedded control, FPGA vision, and autonomous navigation over a networked control stack.</p>
           <div class="row ml-1 mr-1 p-0">
           </div>
         </div>
@@ -210,7 +256,7 @@
 
         <div class="card-body">
           <h2 class="card-title text-lowercase">FPGA computation accelerator</h2>
-          <p class="card-text">A hardware based accelerator for functions related to DSP applications. This project was part of my 3rd year at Imperial College London.</p>
+          <p class="card-text">A custom hardware accelerator for DSP-oriented computation with architectural tuning across approximation, custom instructions, and processor configuration.</p>
           <div class="row ml-1 mr-1 p-0">
           </div>
         </div>
@@ -240,7 +286,7 @@
 
         <div class="card-body">
           <h2 class="card-title text-lowercase">SimonSays</h2>
-          <p class="card-text">A multiplayer battle royale style game designed to help physiotherapy become more entertaining for children.</p>
+          <p class="card-text">A multiplayer rehabilitation game using FPGA-based motion sensing and Python gameplay logic to make physiotherapy more engaging.</p>
           <div class="row ml-1 mr-1 p-0">
           </div>
         </div>
@@ -270,7 +316,7 @@
 
         <div class="card-body">
           <h2 class="card-title text-lowercase">ProPutter</h2>
-          <p class="card-text">An embedded system for golfers to improve their putting. This project was part of my 3rd year at Imperial College London.</p>
+          <p class="card-text">An embedded sensing system for golf swing analysis, combining on-club instrumentation with web-based feedback and analytics.</p>
           <div class="row ml-1 mr-1 p-0">
           </div>
         </div>
@@ -300,17 +346,13 @@
 
         <div class="card-body">
           <h2 class="card-title text-lowercase">HTTP Server library</h2>
-          <p class="card-text">a project undertaken during my 6 month placement at JP Morgan.</p>
+          <p class="card-text">A low-latency C++ HTTP server and support library built for high-volume request handling in a performance-sensitive environment.</p>
           <div class="row ml-1 mr-1 p-0">
           </div>
         </div>
       </div>
     </a>
 </div>
-  </div>
-  <h2 class="category">fun</h2>
-  <!-- Generate cards for each project -->
-  <div class="grid">
   </div>
 </div>
 
@@ -324,7 +366,7 @@
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        © Copyright 2024 Bakhtiar  Zadeh. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
+        © Copyright 2026 Bakhtiar  Zadeh. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
 
       </div>
     </footer>
