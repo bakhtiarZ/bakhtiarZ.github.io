@@ -1,29 +1,23 @@
 ---
 layout: page
 title: "Latent Diffusion Model Accelerator"
-description: a project to develop a data-flow design aimed to be instantiated over one or multiple FPGAs with the goal of reducing diffusion model inference latency by speeding up per step computations. (Ongoing)
+description: A parameterisable FPGA dataflow accelerator for latent diffusion inference with layer-wise post-training quantization.
 img: assets/img/diffusionmodeldiagram.png
-importance: 1
-category: work
+importance: 4
+category: phd
 ---
 
-This project is my final year project for my MEng Electronic and Information Engineering degree at Imperial College London. It aims to reduce the inference latency of diffusion models by targetting the per timestep latency. This will be done by instantiating an optimial and parameterised data-flow design that implements the denoising neural network (U-Net). This work is done in assosciation with the DeepWok Lab (https://deepwok.github.io/).
+This project explores how to reduce latent diffusion inference time by targeting per-step latency rather than only reducing the number of denoising steps. The core idea is a parameterisable dataflow architecture for the U-Net that can be instantiated on one or more FPGAs and tuned against quantization, throughput, and hardware cost.
 
-The abstract for this project is as follows:
+The work spans both hardware and software. On the model side, I used layer-wise post-training quantization and tracked the trade-off between generative quality and implementation cost. On the hardware side, I developed streaming SystemVerilog components for the main network operators and verified them with cocotb and Verilator before integrating them into the accelerator.
 
-Diffusion models achieve state of the art image synthesis and boast powerful generative capabilities. In particular, Latent Diffusion Models are capable of generating high-resolution images that beat alternative methods. However, diffusion models suffer from a long and iterative generation process which consumes a great deal of computational resources. There has been a strong effort to reduce this computational need by reducing the number of iterations (or sampling steps) the diffusion model must undergo, but there has been limited work in reducing per-step latency. This project encompasses the development of the custom hardware and software used to accelerate Latent Diffusion Model inference within a tolerable loss in generative quality. A significant goal of the work is to develop open-source hardware and software in order to encourage global collaboration to aid the goal of efficient computation. The  development of this open-source accelerator will be the first of its kind and could lead to more research being conducted. This aspect is inspired by projects such as lowRisc and the MASE repository which are open-source projects with a focus on quality, efficiency, and robustness of the components developed.
-
-Due to the large complexity of the project, it cannot be fully described in this portfolio. But a diagram for the top level design is below. Overall, many components were developed in SystemVerilog and verified using CocoTB with Verilator. The highly optimised data-streaming design using a quantised latent diffusion model achieved a 4x performance improvement against competing GPUs with a tolerable loss of generative quality. 
-
-The design was implemented on an Xilinx Alveo U250 FPGA with a 222MHz clock frequency. 
+The resulting design was implemented on a Xilinx Alveo U250 running at 222 MHz. In its evaluated configuration, the accelerator achieved performance competitive with high-end GPUs while using a custom streaming architecture tailored to the diffusion workload.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/unetwb.png" title="U-Net block diagram, this was instantiated on an Alveo U250 FPGA" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/unetwb.png" title="U-Net block diagram instantiated on the FPGA" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    An accurate system level diagram of the indivudal layers within the neural network. These will be instantiated on the FPGA.
+    Top-level view of the hardware mapping for the U-Net blocks used by the accelerator.
 </div>
-
-

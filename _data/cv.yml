@@ -3,70 +3,70 @@
   contents:
     - name: Full Name
       value: Bakhtiar Zadeh
-    - name: Date of Birth
-      value: 24th September 2001
     - name: Languages
       value: English
 
 - title: Education
   type: time_table
   contents:
-    - title: MEng (Integrated Masters of Engineering)
+    - title: PhD Student, Machine Learning / Computer Architecture
       institution: Imperial College London, London, United Kingdom
-      year: 2024
+      year: In Progress
       description:
-        - This degree covers a variety of content similar to other qualifications sometimes under the name 'Computer Engineering'. 
-        - title: "Fields of Expertise:"
-          contents:
-            - Digital Electronics (FPGA)
-            - Computer Architecture
-            - Machine Learning
-            - Generative Artificial Intelligence (Diffusion Models)
-            - Software Engineering and Embedded Systems
-        - "Grades: 1st Class Award" 
-    - title: A-Levels (Pre-University)
+        - Conducting research in efficient machine learning inference within the Custom Computing Group at Imperial College London.
+        - Exploring novel architectures and software-hardware co-design methods for high-performance inference systems.
+    - title: MEng Electronic and Information Engineering
+      institution: Imperial College London, London, United Kingdom
+      year: September 2020 - July 2024
+      description:
+        - Graduated with First Class Honours / 4.0 GPA.
+        - Focused on machine learning, financial signal processing, and high-performance computing across FPGA and C++ systems.
+        - "Master's Thesis: Accelerating Latent Diffusion Model Inference using Novel FPGA Architectures."
+    - title: A-Levels
       institution: Woodhouse College, London, United Kingdom
-      year: 2020
+      year: August 2020
       description:
         - title: "Grades:"
           contents:
-          - "Mathematics: A*"
-          - "Further Mathematics: A*"
-          - "Physics: A*"
+            - "Mathematics: A*"
+            - "Further Mathematics: A*"
+            - "Physics: A*"
 
 - title: Experience
   type: time_table
   contents:
-    - title: Software Engineer (6 month placement)
-      institution: JP Morgan Chase, Central Investment Bank, London
-      year: 2023 April - 2023 October
+    - title: C++ Software Engineer
+      institution: Bloomberg, London
+      year: July 2024 - April 2026
       description:
-      - I worked as a software developer within JP Morgan’s market making arm for fixed income products. This role required me to implement features, often involving networking, that met strict latency and code quality requirements. My flagship project was a single-threaded low latency HTTP Server. I worked using C++ 14.         
-      - title: "Technologies and skills used:"
-          contents:
-            - C++ 14 (Object Oriented)
-            - Linux
-            - Git
-            - Networking, HTTP and TCP
-    - title: Hardware Engineer (3 month internship)
-      institution: Imagination Technologies, Kings Langley, United Kingdom
-      year: 2022 July
+        - Developed high-performance market data feed handlers for real-time exchange data.
+        - Worked on onboarding new exchanges and improving performance with asynchronous programming techniques.
+        - Deepened my C++ experience in areas including template metaprogramming and compile-time programming.
+    - title: C++ Software Engineer
+      institution: JP Morgan, London
+      year: April 2023 - October 2023
       description:
-        - In this role, I worked within the GPU team undertaking design and verification tasks. A notable project was the grading and profiling of various testbenches providing useful analytics.
-        - title: "Technologies and skills used:"
-          contents:
-            - SystemVerilog
-            - Linux
-            - Perforce
-            - Python (scripting)
+        - Built low-latency software features for fixed-income market-making systems with a focus on network performance and code quality.
+        - Designed and implemented a single-threaded HTTP server and supporting library for high-volume pricing requests.
+    - title: Hardware Engineer
+      institution: Imagination Technologies, London
+      year: July 2022 - October 2022
+      description:
+        - Contributed to GPU hardware verification using Python and SystemVerilog.
+        - Optimised testbench performance, reducing simulation time and improving verification efficiency.
+    - title: Teaching Assistant / Tutor
+      institution: Imperial College London / Private
+      year: October 2018 - Present
+      description:
+        - Worked in both classroom and one-to-one teaching settings across STEM subjects.
+        - Developed clear communication skills by teaching students with different ages and levels of technical background.
 
-    - title: Tutor 
-      institution: Imperial College London / Private.
-      year: 2018 - Present
-      description:
-        - I have enjoyed teaching / tutoring since I was young and have worked in both classroom and 1-on-1 settings. I primarily teach STEM subjects to school children but also work as tutor as a part of the Electrical Engineering department at Imperial College London.
+- title: Skills
+  type: list
+  contents:
+    - C++, FPGA, machine learning, Python, GPU systems, generative AI, SystemVerilog, computer architecture, heterogeneous systems.
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Working out and Exercise, Video games (very bad at shooters), Nature.
+    - <u>Hobbies:</u> Exercise, video games, nature.

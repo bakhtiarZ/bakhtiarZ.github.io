@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of my projects.
+description: Research projects and selected technical side projects.
 nav: true
 nav_order: 2
-display_categories: [work, fun]
+display_categories: [phd, pet]
 horizontal: false
 ---
 
@@ -14,7 +14,7 @@ horizontal: false
 {%- if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
   {%- for category in page.display_categories %}
-  <h2 class="category">{{ category }}</h2>
+  <h2 class="category">{% if category == "phd" %}PhD Projects{% elsif category == "pet" %}Pet Projects{% else %}{{ category }}{% endif %}</h2>
   {%- assign categorized_projects = site.projects | where: "category", category -%}
   {%- assign sorted_projects = categorized_projects | sort: "importance" %}
   <!-- Generate cards for each project -->
